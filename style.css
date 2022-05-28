@@ -97,20 +97,7 @@ h1 {
 }
 
 .ganhou {
-    width: 20vh;
-    height: 20vh;
-
-    background-color: #009e9e;
-
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-size: 5vh;
-    font-family: Verdana;
-    text-align: center;
+    font-size: 8vh;
     font-weight: bolder;
     color: #921d1d;
 }
