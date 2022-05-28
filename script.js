@@ -30,6 +30,7 @@ function start(){
 function check(){
     let quadrados = document.getElementsByClassName("quadrado")
     let vez = document.getElementById("vez")
+    let usados = 0
 
     for(let i = 0; i < 3; i++){
         //Linhas
@@ -61,12 +62,13 @@ function check(){
 
     //diagonal
     if(quadrados[0].innerHTML != "" && quadrados[0].innerHTML == quadrados[4].innerHTML &&
-    quadrados[4].innerHTML != "" && quadrados[4].innerHTML == quadrados[8].innerHTML){
-        vez.innerHTML = "Vencedor " + quadrados[4].innerHTML
+    quadrados[4].innerHTML == quadrados[8].innerHTML){
+        vez.innerHTML = "Vencedor " + quadrados[0].innerHTML
 
-        quadrados[0].className = "ganhou"
-        quadrados[3].className = "ganhou"
-        quadrados[6].className = "ganhou"
+        for(let i = 0; i < 3; i++){
+            quadrados[i*4].classList.remove("usado")
+            quadrados[i*4].classList.add("ganhou")
+        }
 
         game_run = false
     }
@@ -75,10 +77,22 @@ function check(){
     quadrados[4].innerHTML != "" && quadrados[4].innerHTML == quadrados[2].innerHTML){
         vez.innerHTML = "Vencedor " + quadrados[4].innerHTML
 
-        quadrados[6].className = "ganhou"
-        quadrados[4].className = "ganhou"
-        quadrados[2].className = "ganhou"
+        for(let i = 1; i <= 3; i++){
+            quadrados[i*2].classList.remove("usado")
+            quadrados[i*2].classList.add("ganhou")
+        }
 
+        game_run = false
+    }
+
+    for(let e of quadrados){
+        if(e.innerHTML != ""){
+            usados++
+        }
+    }
+
+    if(usados == 9){
+        vez.innerHTML = "Empate"
         game_run = false
     }
 
