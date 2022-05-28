@@ -1,6 +1,6 @@
 function apertar(e){
     let info_vez = document.getElementById("vez")
-    if(game_run){
+    if(game_run && e.classList.contains("vazio")){
         e.classList.remove("vazio")
         e.classList.add("usado")
 
