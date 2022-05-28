@@ -18,6 +18,7 @@ function apertar(e){
 }
 
 function start(){
+    vez_de = players[Math.floor(Math.random()*players.length)]
     game_run = true
     document.getElementById("vez").innerHTML = "Vez de: " + vez_de
 
@@ -93,7 +94,7 @@ function check(){
         }
     }
 
-    if(usados == 9){
+    if(usados == 9 && game_run){
         vez.innerHTML = "Empate"
         game_run = false
     }
@@ -103,13 +104,18 @@ function check(){
     }
 }
 
+document.addEventListener("keypress", function(e){
+    if(e.code === "Space"){
+        start()
+    }
+})
+
 //Functions
 //====================
 //Codigo
 
 var players = ["X", "O"]
-var vez_de = players[Math.floor(Math.random()*players.length)];
-
-var game_run = true
+var vez_de
+var game_run
 
 start()
