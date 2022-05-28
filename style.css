@@ -3,9 +3,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     background-color: #024059;
+}
+
+#all {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
@@ -70,8 +78,8 @@ h1 {
     padding: 5vh;
 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -85,6 +93,29 @@ h1 {
     box-shadow: -5px 5px 2px #024059;
     
     border-radius: 10px;
+}
+
+#restart {
+    width: 10vh;
+    height: 10vh;
+
+    transition: width 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #04BF8A;
+    box-shadow: -5px 5px 2px #024059;
+    
+    border-radius: 10px;
+}
+
+#icon {
+    width: 70%;
+    height: 70%;
+
+    filter: opacity(0.3) drop-shadow(0 0 0 #024059);
 }
 
 .ft_padrao {

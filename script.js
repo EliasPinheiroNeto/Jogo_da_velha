@@ -18,12 +18,14 @@ function apertar(e){
 }
 
 function start(){
+    game_run = true
     document.getElementById("vez").innerHTML = "Vez de: " + vez_de
 
     let quadrados = document.getElementsByClassName("quadrado")
     
     for(let i of quadrados){
         i.className = "quadrado vazio"
+        i.innerHTML = ""
     }
 }
 

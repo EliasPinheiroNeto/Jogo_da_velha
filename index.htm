@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="All">
-        <h1>Jogo da Velha</h1>
+    <div id="all">
         <div class="area">
             <div class="linha">
                 <div class="quadrado vazio" onclick="apertar(this)"></div>
@@ -29,6 +28,9 @@
             </div>
             <div class="info">
                 <div class="ft_padrao" id="vez"></div>
+                <div class="ft_padrao" id="restart" onclick="start()">
+                    <img id="icon" src="restart.png">
+                </div>
             </div>
         </div>
     </div>
