@@ -42,6 +42,8 @@ h1 {
 
     transition: box-shadow 0.5s;
     transition: background-color 0.5s;
+    transition: font-weight 1s;
+    transition: font-size 1s;
 
     border-radius: 10px;
 
@@ -100,4 +102,5 @@ h1 {
     font-size: 8vh;
     font-weight: bolder;
     color: #921d1d;
+    background-color: #009e9e;
 }
