@@ -70,6 +70,10 @@ h1 {
     box-shadow: -5px 5px 2px #024059;
 }
 
+.vazio:hover {
+    background-color: #00cfa2;
+}
+
 .usado {
     background-color: #009e9e;
 }
@@ -109,6 +113,10 @@ h1 {
     box-shadow: -5px 5px 2px #024059;
     
     border-radius: 10px;
+}
+
+#restart:hover {
+    background-color: #00cfa2;
 }
 
 #icon {
