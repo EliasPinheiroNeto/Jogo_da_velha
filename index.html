@@ -8,34 +8,37 @@
     <title>Jogo da Velha</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/classic.css">
 </head>
 
 <body>
-    <div id="all">
-        <div class="area">
-            <div class="linha">
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
+    <div class="tablet flex column">
+        <div class="flex row jb">
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+        </div>
+        <div class="flex row jb">
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+        </div>
+        <div class="flex row jb">
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+            <div class="quadrado vazio" onclick="apertar(this)"></div>
+        </div>
+
+        <div class="info flex row jb">
+            <div class="icon" onclick="start()">
+                <img src="assets/img/restart.png">
             </div>
-            <div class="linha">
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-            </div>
-            <div class="linha">
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-                <div class="quadrado vazio" onclick="apertar(this)"></div>
-            </div>
-            <div class="info">
-                <div class="ft_padrao" id="vez"></div>
-                <div class="ft_padrao" id="restart" onclick="start()">
-                    <img id="icon" src="assets/img/restart.png">
-                </div>
-            </div>
+            <div class="ft-1 t60" id="vez">Vez de: X</div>
         </div>
     </div>
+
+
+
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.jb {
+    justify-content: space-between;
+}
+
+.ac {
+    align-items: center;
+}
+
+
+.t100 {
+    width: 100%;
+}
+
+.t30 {
+    width: 30%;
+}
+
+.t60 {
+    width: 60%;
+}
+
+
+.b {
+    border: solid 1px red;
+}
